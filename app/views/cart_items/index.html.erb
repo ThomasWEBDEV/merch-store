@@ -39,7 +39,9 @@
 
   <div class="mt-3">
     <%= link_to "Continuer les achats", products_path, class: "btn btn-secondary" %>
-    <button class="btn btn-success">Commander (simulation)</button>
+    <button class="btn btn-success" onclick="alert('✅ Commande simulée ! Dans une vraie app, on irait vers le paiement.'); return false;">
+      Commander (simulation)
+    </button>
   </div>
 <% else %>
   <div class="alert alert-info">
